@@ -34,7 +34,7 @@
 	a {
 		text-decoration: none;
 		padding: 1em 0.5em;
-		display: block;
+		display: inline-block;
 	}
 	a.current {
 		border-bottom: 3px solid #ff3e00;
@@ -45,12 +45,12 @@
 
 <nav>
 	<div>
-		<h1 on:click={handleClick}>Job Ninja</h1>
+		<h1 on:click={handleClick}><a href="."> Job Ninja</a></h1>
 		<ul>
 			<li><a class:current={segment === undefined} href=".">home</a></li>
 			<li><a class:current={segment === 'contact'}  href="contact">contact</a></li>
 			<li><a class:current={segment === 'about'}  href="about">about</a></li>
-			<li><a class:current={segment === 'jobs'}  href="jobs">jobs</a></li>
+			<li><a rel=prefetch class:current={segment === 'jobs'}  href="jobs">jobs</a></li>
 		</ul>
 	</div>
 </nav>

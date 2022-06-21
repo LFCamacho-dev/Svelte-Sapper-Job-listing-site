@@ -1,5 +1,11 @@
+<script context="module">
+
+</script>
+
+
+
 <script>
-	import successkid from 'images/successkid.jpg';
+
 </script>
 
 <style>
